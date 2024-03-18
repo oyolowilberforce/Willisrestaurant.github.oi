@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willis Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+html{
+    height: 100%;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background-image.jpg');
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+        }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    }
+
+header {
+  height: 118px;
+  text-align: center;
+
+}
+nav {
+    background-color:rgba(255, 0, 0, 0.342);  
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+}
+main {
+    height: 400px;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+footer {
+    background-color:rgba(0, 0, 0, 0.671);  
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+h1 {
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+p {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a {
+text-decoration: none;
+font-size: 12px;
+padding-left: 10px;
+padding-right: 10px;
+}
+footer p{
+    font-size: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+        <header>
+            <img src="images/Willi's-Restaurant-Logo.jpg" alt="Logo for Willi`s Restaurant">
+        </header>
+    
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="orderonline.html">ORDER ONLINE</a>
+            <a href="catering.html">CATERING</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="#" id="logoutButton">LOGOUT</a> <!-- Moved the ID to the logout anchor tag -->
+        </nav>
+    
+        <main>
+            
+            <h1>Welcome To Willi's Restaurant</h1>
+            <p>Experience the finest dining experience with us.</p>
+            <p>Indulge in our delicious dishes carefully crafted to tantalize your taste buds.</p>
+            <p>Join us for an unforgettable culinary journey!</p>
+            <a href="mailto:oyolowilberforce@gmail.com?Subject=Reservation">MAKE RESERVATION</a>
+        </main>
+        
+        <footer>
+            <p>Willi's Restaurant.oyolowilberforce@gmail.com.Copyright 2024©</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            // Clear any authentication information here (e.g., remove tokens or clear cookies/local storage)
+            // For demonstration purposes, let's clear localStorage
+            localStorage.removeItem('authToken');
+            
+            // Redirect the user to the login page or another appropriate page after logout
+            window.location.href = 'login.html'; // Replace 'login.html' with your actual login page
+        });
+    </script>
+</body>
+</html>
