@@ -7,14 +7,20 @@
     <title>Willis Restaurant - Menu</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
+body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-image: url('images/background-image.jpg');
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
         }
         header {
-            background-color: #e74c3c;
+            background-color: rgba(0, 0, 0, 0.5);
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -31,7 +37,8 @@
             text-align: center;
         }
         .menu-item {
-            background-color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            color:white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -50,7 +57,7 @@
             margin-bottom: 10px;
         }
         footer {
-            background-color: #34495e;
+            background-color: rgba(0, 0, 0, 0.5);
             color: white;
             text-align: center;
             padding: 20px 0;
